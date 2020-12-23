@@ -16,8 +16,8 @@ repositories {
         url = uri("https://maven.pkg.github.com/kmgowda/SBK")
 
         credentials {
-            username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_USERNAME")
-            password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
+            username = project.findProperty("github.user") ?: System.getenv("GITHUB_USERNAME")
+            password = project.findProperty("github.token") ?: System.getenv("GITHUB_TOKEN")
         }
     }
 }
