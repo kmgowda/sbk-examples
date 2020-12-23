@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://jitpack.io'
+    }
+}
+mainClassName = "File"
+
+
+dependencies {
+    implementation 'com.github.kmgowda.SBK:sbk-api:0.84'
+
+}
