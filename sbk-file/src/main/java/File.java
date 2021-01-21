@@ -101,7 +101,7 @@ public class File implements Storage<ByteBuffer> {
     public static void main(final String[] args) {
         Storage device = new File();
         try {
-            Sbk.run(args, device, "sbk-file");
+            Sbk.run(args, device, "FILE");
         } catch (ParseException | IllegalArgumentException | IOException |
                 InterruptedException | ExecutionException ex) {
             ex.printStackTrace();
