@@ -27,7 +27,7 @@ To build
 ```
 cd ./sbk-file
 
-./gradlew -b  maven-build.gradle installDist
+./gradlew -b  mavencentral-build.gradle installDist
 
 ```
 
@@ -36,7 +36,7 @@ To clean the build
 ```
 cd ./sbk-file
 
-./gradlew -b  maven-build.gradle clean
+./gradlew -b  mavencentral-build.gradle clean
 ```
 
 ## Jit Pack Build
