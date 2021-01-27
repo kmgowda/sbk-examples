@@ -21,7 +21,7 @@ repositories {
         }
     }
 }
-mainClassName = "File"
+mainClassName = "Main"
 
 
 /*

@@ -12,7 +12,7 @@ repositories {
         url 'https://jitpack.io'
     }
 }
-mainClassName = "File"
+mainClassName = "Main"
 
 def sbkVersion = 0.85
 

@@ -10,7 +10,7 @@ repositories {
     mavenCentral()
 }
 
-mainClassName = "File"
+mainClassName = "Main"
 
 def sbkVersion = 0.85
 

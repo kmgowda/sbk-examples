@@ -10,6 +10,7 @@
 
 public class FileConfig {
     public String fileName;
+    public int asyncThreads;
     public boolean isAppend;
     public boolean reCreate;
     public boolean metaUpdate;
