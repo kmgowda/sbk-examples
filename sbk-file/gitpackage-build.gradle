@@ -22,6 +22,8 @@ repositories {
     }
 }
 mainClassName = "File"
+
+
 /*
 applicationName = "file-benchmark"
 
@@ -30,8 +32,11 @@ application {
 }
  */
 
+def sbkVersion = 0.85
+
+
 dependencies {
-    implementation 'sbk:sbk-api:0.84'
+    implementation "sbk:sbk-api:$sbkVersion"
    // compile "sbk:sbk-api:0.84"
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }

@@ -24,6 +24,7 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.Objects;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeoutException;
 
 /**
  * Class for File System Benchmarking using File Channel.
@@ -101,9 +102,9 @@ public class File implements Storage<ByteBuffer> {
     public static void main(final String[] args) {
         Storage device = new File();
         try {
-            Sbk.run(args, device, "FILE");
+            Sbk.run(args, device, "FILE", null);
         } catch (ParseException | IllegalArgumentException | IOException |
-                InterruptedException | ExecutionException ex) {
+                InterruptedException | ExecutionException |  TimeoutException ex) {
             ex.printStackTrace();
             System.exit(1);
         }
