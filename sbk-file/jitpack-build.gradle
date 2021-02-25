@@ -14,7 +14,7 @@ repositories {
 }
 mainClassName = "Main"
 
-def sbkVersion = 0.85
+def sbkVersion = 0.86
 
 
 dependencies {
