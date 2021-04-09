@@ -10,10 +10,10 @@
 
 import io.sbk.api.DataType;
 import io.sbk.api.Parameters;
-import io.sbk.api.SendChannel;
-import io.sbk.api.Status;
-import io.sbk.api.Time;
+import io.sbk.perl.SendChannel;
+import io.sbk.perl.Time;
 import io.sbk.api.Writer;
+import io.sbk.api.Status;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
