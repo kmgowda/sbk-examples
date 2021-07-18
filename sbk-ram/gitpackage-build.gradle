@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+
+    maven {
+        name = "GitHubPackages"
+        url = uri("https://maven.pkg.github.com/kmgowda/SBK")
+
+        credentials {
+            username = project.findProperty("github.user") ?: System.getenv("GITHUB_USERNAME")
+            password = project.findProperty("github.token") ?: System.getenv("GITHUB_TOKEN")
+        }
+    }
+}
+mainClassName = "io.ram.Main"
+
+
+/*
+applicationName = "file-benchmark"
+
+application {
+    applicationDefaultJvmArgs = ['-Dsbk.applicationName=' + applicationName]
+}
+ */
+
+def sbkVersion = 0.90
+
+
+dependencies {
+    implementation "sbk:sbk-ram:$sbkVersion"
+   // compile "sbk:sbk-api:0.84"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
