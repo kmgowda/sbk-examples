@@ -21,7 +21,7 @@ repositories {
         }
     }
 }
-mainClassName = "Main"
+mainClassName = "io.file.Main"
 
 
 /*
@@ -32,7 +32,7 @@ application {
 }
  */
 
-def sbkVersion = 0.891
+def sbkVersion = 0.90
 
 
 dependencies {

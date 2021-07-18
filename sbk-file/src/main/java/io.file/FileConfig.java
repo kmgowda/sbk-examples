@@ -7,7 +7,7 @@
  *
  *     http://www.apache.org/licenses/LICENSE-2.0
  */
-
+package io.file;
 public class FileConfig {
     public String fileName;
     public int asyncThreads;

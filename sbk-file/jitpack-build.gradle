@@ -12,9 +12,9 @@ repositories {
         url 'https://jitpack.io'
     }
 }
-mainClassName = "Main"
+mainClassName = "io.file.Main"
 
-def sbkVersion = 0.891
+def sbkVersion = 0.90
 
 
 dependencies {
