@@ -12,9 +12,9 @@ repositories {
 
 mainClassName = "io.ram.Main"
 
-def sbkVersion = 0.901
+def sbkVersion = 0.902
 
 dependencies {
-    implementation "io.github.kmgowda:sbk-ram:$sbkVersion"
+    implementation "io.github.kmgowda.sbk:sbk-ram:$sbkVersion"
 
 }
