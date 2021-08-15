@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = "io.gem.Main"
+
+def sbkVersion = 0.902
+
+dependencies {
+    implementation "io.github.kmgowda.sbk:sbk-gem:$sbkVersion"
+
+}

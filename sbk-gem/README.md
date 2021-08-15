@@ -1,4 +1,4 @@
-# Build Custom SBK-RAM using sbk-ram package 
+# Build Custom SBK-GEM using sbk-gem package 
 
 To build the File system benchmarking using sbk-file storage interface with following options 
 
@@ -6,7 +6,7 @@ To build the File system benchmarking using sbk-file storage interface with foll
 
 To build
 ```
-cd ./sbk-ram
+cd ./sbk-gem
 
 ./gradlew -b gitpackage-build.gradle installDist
 
@@ -15,7 +15,7 @@ cd ./sbk-ram
 To clean the build
 
 ```
-cd ./sbk-ram
+cd ./sbk-gem
 
 ./gradlew -b gitpackage-build.gradle clean
 ```
@@ -25,7 +25,7 @@ cd ./sbk-ram
 
 To build
 ```
-cd ./sbk-ram
+cd ./sbk-gem
 
 ./gradlew -b  mavencentral-build.gradle installDist
 
@@ -34,7 +34,7 @@ cd ./sbk-ram
 To clean the build
 
 ```
-cd ./sbk-ram
+cd ./sbk-gem
 
 ./gradlew -b  mavencentral-build.gradle clean
 ```
@@ -43,7 +43,7 @@ cd ./sbk-ram
 
 To build
 ```
-cd ./sbk-ram
+cd ./sbk-gem
 
 ./gradlew -b jitpack-build.gradle installDist
 
@@ -52,7 +52,7 @@ cd ./sbk-ram
 To clean the build
 
 ```
-cd ./sbk-ram
+cd ./sbk-gem
 
 ./gradlew -b jitpack-build.gradle clean
 ```
