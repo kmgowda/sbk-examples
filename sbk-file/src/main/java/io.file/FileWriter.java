@@ -8,12 +8,12 @@
  *     http://www.apache.org/licenses/LICENSE-2.0
  */
 package io.file;
-import io.sbk.api.DataType;
-import io.sbk.api.Parameters;
+import io.sbk.data.DataType;
+import io.sbk.api.ParameterOptions;
 import io.sbk.perl.SendChannel;
-import io.sbk.perl.Time;
-import io.sbk.api.Writer;
 import io.sbk.api.Status;
+import io.sbk.time.Time;
+import io.sbk.api.Writer;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -30,7 +30,7 @@ public class FileWriter implements Writer<ByteBuffer> {
     final private FileChannel out;
     final private FileConfig config;
 
-    public FileWriter(int id, Parameters params, FileConfig config) throws IOException {
+    public FileWriter(int id, ParameterOptions params, FileConfig config) throws IOException {
         this.config = config;
         if (config.isAppend) {
             this.out = FileChannel.open(Paths.get(config.fileName), StandardOpenOption.WRITE,

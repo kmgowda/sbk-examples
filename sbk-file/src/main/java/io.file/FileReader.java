@@ -8,10 +8,10 @@
  *     http://www.apache.org/licenses/LICENSE-2.0
  */
 package io.file;
-import io.sbk.api.DataType;
-import io.sbk.api.Parameters;
-import io.sbk.api.Reader;
 
+import io.sbk.data.DataType;
+import io.sbk.api.ParameterOptions;
+import io.sbk.api.Reader;
 
 import java.io.EOFException;
 import java.io.IOException;
@@ -27,7 +27,7 @@ public class FileReader implements Reader<ByteBuffer> {
     final private FileChannel in;
     final private ByteBuffer readBuffer;
 
-    public FileReader(int id, Parameters params, DataType<ByteBuffer> dType, FileConfig config) throws IOException {
+    public FileReader(int id, ParameterOptions params, DataType<ByteBuffer> dType, FileConfig config) throws IOException {
         this.in = FileChannel.open(Paths.get(config.fileName), StandardOpenOption.READ);
         this.readBuffer = dType.create(params.getRecordSize());
     }
