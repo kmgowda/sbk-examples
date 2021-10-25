@@ -6,13 +6,19 @@ plugins {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
+/*
+java {
+    disableAutoTargetJvm()
+}
+ */
+
 repositories {
     mavenCentral()
 }
 
 mainClassName = "io.gem.Main"
 
-def sbkVersion = 0.92
+def sbkVersion = 0.931
 
 dependencies {
     implementation "io.github.kmgowda.sbk:sbk-gem-yal:$sbkVersion"
