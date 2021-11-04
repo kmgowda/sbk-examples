@@ -14,10 +14,9 @@ repositories {
 }
 mainClassName = "io.file.Main"
 
-def sbkVersion = 'c352aa0ade'
+def sbkVersion = 'b77415d26c'
 
 
 dependencies {
     implementation "com.github.kmgowda.SBK:sbk-api:$sbkVersion"
-
 }
