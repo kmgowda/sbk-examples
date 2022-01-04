@@ -14,7 +14,7 @@ repositories {
 }
 mainClassName = "io.gem.Main"
 
-def sbkVersion = 'c352aa0ade'
+def sbkVersion = '0.95'
 
 
 dependencies {
