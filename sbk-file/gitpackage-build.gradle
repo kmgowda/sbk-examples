@@ -17,7 +17,7 @@ repositories {
 
         credentials {
             username = "sbk-public"
-            password = "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"
+            password = "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"
         }
     }
 }
@@ -32,7 +32,7 @@ application {
 }
  */
 
-def sbkVersion = 0.95
+def sbkVersion = 0.952
 
 
 dependencies {

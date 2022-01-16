@@ -10,9 +10,9 @@
 package io.file;
 import io.sbk.data.DataType;
 import io.sbk.api.ParameterOptions;
-import io.sbk.perl.SendChannel;
+import io.perl.PerlChannel;
 import io.sbk.api.Status;
-import io.sbk.time.Time;
+import io.time.Time;
 import io.sbk.api.Writer;
 
 import java.io.IOException;
@@ -43,7 +43,7 @@ public class FileWriter implements Writer<ByteBuffer> {
 
     @Override
     public void recordWrite(DataType<ByteBuffer> dType, ByteBuffer data, int size, Time time,
-                            Status status, SendChannel record, int id) throws IOException {
+                            Status status, PerlChannel record, int id) throws IOException {
         final ByteBuffer buffer = data.asReadOnlyBuffer();
         status.startTime = time.getCurrentTime();
         out.write(buffer);
