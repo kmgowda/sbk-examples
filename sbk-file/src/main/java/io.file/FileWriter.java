@@ -43,14 +43,14 @@ public class FileWriter implements Writer<ByteBuffer> {
 
     @Override
     public void recordWrite(DataType<ByteBuffer> dType, ByteBuffer data, int size, Time time,
-                            Status status, PerlChannel record, int id) throws IOException {
+                            Status status, PerlChannel record) throws IOException {
         final ByteBuffer buffer = data.asReadOnlyBuffer();
         status.startTime = time.getCurrentTime();
         out.write(buffer);
         status.endTime = time.getCurrentTime();
         status.bytes = size;
         status.records = 1;
-        record.send(id, status.startTime, status.endTime, size, 1);
+        record.send(status.startTime, status.endTime, size, 1);
     }
 
 
