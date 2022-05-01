@@ -15,7 +15,7 @@ repositories {
 mainClassName = "io.ram.Main"
 mainClassName = "io.ram.Main"
 
-def sbkVersion = 0.97
+def sbkVersion = 0.98
 
 
 dependencies {
