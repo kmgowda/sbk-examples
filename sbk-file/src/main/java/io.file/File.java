@@ -15,7 +15,8 @@ import io.sbk.api.DataReader;
 import io.sbk.data.DataType;
 import io.sbk.api.DataWriter;
 import io.sbk.api.Storage;
-import io.sbk.api.ParameterOptions;
+import io.sbk.params.ParameterOptions;
+import io.sbk.params.InputOptions;
 import io.sbk.data.impl.NioByteBuffer;
 import io.sbk.system.Printer;
 
@@ -32,7 +33,7 @@ public class File implements Storage<ByteBuffer> {
     private DataType<ByteBuffer> dType;
 
     @Override
-    public void addArgs(final ParameterOptions params) throws IllegalArgumentException {
+    public void addArgs(final InputOptions params) throws IllegalArgumentException {
         final ObjectMapper mapper = new ObjectMapper(new JavaPropsFactory())
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         try {

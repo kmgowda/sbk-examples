@@ -12,7 +12,7 @@ package io.file;
 
 import io.sbk.api.AsyncReader;
 import io.sbk.data.DataType;
-import io.sbk.api.ParameterOptions;
+import io.sbk.params.ParameterOptions;
 
 import java.io.EOFException;
 import java.io.IOException;

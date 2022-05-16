@@ -9,7 +9,7 @@
  */
 package io.file;
 import io.sbk.data.DataType;
-import io.sbk.api.ParameterOptions;
+import io.sbk.params.ParameterOptions;
 import io.perl.api.PerlChannel;
 import io.sbk.api.Status;
 import io.time.Time;
