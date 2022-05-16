@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = "io.file.Main"
+
+def sbkVersion = 0.99
+
+dependencies {
+    implementation "io.github.kmgowda.sbk:sbk-yal:$sbkVersion"
+}

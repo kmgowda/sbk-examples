@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+
+    maven {
+        name = "GitHubPackages"
+        url = uri("https://maven.pkg.github.com/kmgowda/SBK")
+
+        credentials {
+            username = "sbk-public"
+            password = "\u0067hp_FBqmGRV6KLTcFjwnDTvozvlhs3VNja4F67B5"
+        }
+    }
+}
+mainClassName = "io.file.Main"
+
+
+/*
+applicationName = "file-benchmark"
+
+application {
+    applicationDefaultJvmArgs = ['-Dsbk.applicationName=' + applicationName]
+}
+ */
+
+def sbkVersion = 0.99
+
+
+dependencies {
+    implementation "io.github.kmgowda.sbk:sbk-yal:$sbkVersion"
+}
