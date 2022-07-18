@@ -32,7 +32,7 @@ application {
 }
  */
 
-def sbkVersion = 0.99
+def sbkVersion = 0.991
 
 
 dependencies {
