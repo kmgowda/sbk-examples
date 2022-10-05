@@ -10,11 +10,11 @@ repositories {
     mavenCentral()
 }
 
-mainClassName = "io.ram.Main"
+mainClassName = "io.sbm.Main"
 
-def sbkVersion = 1.0
+def sbkVersion = "2.0-pre1"
 
 dependencies {
-    implementation "io.github.kmgowda.sbk:sbk-ram:$sbkVersion"
+    implementation "io.github.kmgowda.sbk:sbm:$sbkVersion"
 
 }

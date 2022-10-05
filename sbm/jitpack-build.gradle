@@ -12,13 +12,13 @@ repositories {
         url 'https://jitpack.io'
     }
 }
-mainClassName = "io.ram.Main"
-mainClassName = "io.ram.Main"
 
-def sbkVersion = 1.0
+mainClassName = "io.sbm.Main"
+
+def sbkVersion = "2.0-pre1"
 
 
 dependencies {
-    implementation "com.github.kmgowda.SBK:sbk-ram:$sbkVersion"
+    implementation "com.github.kmgowda.SBK:sbm:$sbkVersion"
 
 }

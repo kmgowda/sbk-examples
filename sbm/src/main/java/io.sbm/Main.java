@@ -7,8 +7,8 @@
  *
  *     http://www.apache.org/licenses/LICENSE-2.0
  */
-package io.ram;
-import io.sbk.ram.impl.SbkRam;
+package io.sbm;
+import io.sbm.api.impl.Sbm;
 import org.apache.commons.cli.ParseException;
 
 import java.io.IOException;
@@ -20,7 +20,7 @@ public class Main {
 
     public static void main(final String[] args) {
         try {
-            SbkRam.run(args, "ram", null);
+            Sbm.run(args, "sbm", null);
             } catch (ParseException | IllegalArgumentException | IOException |
                 InterruptedException | ExecutionException | TimeoutException |
                 InstantiationException   ex) {
