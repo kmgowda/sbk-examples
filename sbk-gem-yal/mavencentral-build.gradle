@@ -18,7 +18,7 @@ repositories {
 
 mainClassName = "io.gem.Main"
 
-def sbkVersion = "2.0-pre1"
+def sbkVersion = "2.0"
 
 dependencies {
     implementation "io.github.kmgowda.sbk:sbk-gem-yal:$sbkVersion"
