@@ -20,7 +20,7 @@ public class Main {
 
     public static void main(final String[] args) {
         try {
-            SbkGem.run(args, null, "gem", null);
+            SbkGem.run(args, "gem", null,  null);
             } catch (ParseException | IllegalArgumentException | IOException |
                 InterruptedException | ExecutionException | TimeoutException ex) {
                 ex.printStackTrace();

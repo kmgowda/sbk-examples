@@ -8,7 +8,7 @@
  *     http://www.apache.org/licenses/LICENSE-2.0
  */
 package io.gem;
-import io.sbk.gem.impl.SbkGemYal;
+import io.gem.api.impl.SbkGemYal;
 import org.apache.commons.cli.ParseException;
 
 import java.io.IOException;
@@ -21,12 +21,14 @@ public class Main {
 
     public static void main(final String[] args) {
         try {
-            SbkGemYal.run(args, null, "GemYal", null);
+            SbkGemYal.run(args, "GemYal", null, null);
             } catch (HelpException ex) {
                 System.out.println(ex.toString());
                 System.exit(1);
         } catch (ParseException | IllegalArgumentException | IOException |
-                InterruptedException | ExecutionException | TimeoutException ex) {
+                InterruptedException | ExecutionException | TimeoutException |  ClassNotFoundException |
+                InvocationTargetException | InstantiationException | NoSuchMethodException |
+                 IllegalAccessException ex) {
                 ex.printStackTrace();
                 System.exit(1);
             }

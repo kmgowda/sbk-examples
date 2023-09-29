@@ -22,7 +22,7 @@ public class Main {
     public static void main(final String[] args) {
         Storage device = new File();
         try {
-            Sbk.run(args, device.getClass().getPackage().getName(), "FILE", null);
+            Sbk.run(args, "FILE", device.getClass().getPackage().getName(), null);
             } catch (ParseException | IllegalArgumentException | IOException |
                 InterruptedException | ExecutionException | TimeoutException |
                 InstantiationException | ClassNotFoundException | InvocationTargetException |
