@@ -8,7 +8,7 @@
  *     http://www.apache.org/licenses/LICENSE-2.0
  */
 package io.gem;
-import io.sbk.gem.impl.SbkGem;
+import io.gem.api.impl.SbkGem;
 import org.apache.commons.cli.ParseException;
 
 import java.io.IOException;
@@ -22,7 +22,9 @@ public class Main {
         try {
             SbkGem.run(args, "gem", null,  null);
             } catch (ParseException | IllegalArgumentException | IOException |
-                InterruptedException | ExecutionException | TimeoutException ex) {
+                     InterruptedException | ExecutionException | TimeoutException |  ClassNotFoundException |
+                     InvocationTargetException | InstantiationException | NoSuchMethodException |
+                     IllegalAccessException ex) {
                 ex.printStackTrace();
                 System.exit(1);
             }
