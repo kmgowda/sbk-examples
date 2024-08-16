@@ -56,3 +56,11 @@ cd ./sbk-gem-yal
 
 ./gradlew -b jitpack-build.gradle clean
 ```
+
+
+# example
+```
+
+./build/install/sbk-gem-yal/bin/sbk-gem-yal -f ./sbk-gem-1.yml
+
+```

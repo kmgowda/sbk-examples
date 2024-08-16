@@ -56,3 +56,9 @@ cd ./sbk-file
 
 ./gradlew -b jitpack-build.gradle clean
 ```
+
+# Examples
+```
+./build/install/sbk-file/bin/sbk-file -class file ./test.txt -readers 1 -size 10 -time ns -seconds 30
+```
+
