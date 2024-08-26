@@ -14,7 +14,7 @@ repositories {
 }
 mainClassName = "io.file.Main"
 
-def sbkVersion =  "5.2"
+def sbkVersion =  "5.3"
 
 
 dependencies {
