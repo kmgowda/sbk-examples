@@ -15,7 +15,7 @@ repositories {
 
 mainClassName = "io.sbm.Main"
 
-def sbkVersion = "5.0"
+def sbkVersion = "6.0"
 
 
 dependencies {

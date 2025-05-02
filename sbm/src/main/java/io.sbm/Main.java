@@ -23,7 +23,8 @@ public class Main {
             Sbm.run(args, "sbm", null);
             } catch (ParseException | IllegalArgumentException | IOException |
                 InterruptedException | ExecutionException | TimeoutException |
-                InstantiationException   ex) {
+                InstantiationException | ClassNotFoundException | InvocationTargetException |
+                NoSuchMethodException | IllegalAccessException  ex) {
                 ex.printStackTrace();
                 System.exit(1);
             }
