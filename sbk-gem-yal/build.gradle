@@ -9,7 +9,6 @@ version '1.0-SNAPSHOT'
 repositories {
     mavenLocal()
     mavenCentral()
-    jcenter()
 
     maven {
         name = "GitHubPackages"
@@ -21,18 +20,20 @@ repositories {
         }
     }
 }
-mainClassName = "io.gem.Main"
 
+application {
+    applicationName = "sbk-gem-yal"
+    mainClass = "io.gem.Main"
+}
 
 /*
 applicationName = "file-benchmark"
 
 application {
-    applicationDefaultJvmArgs = ['-Dsbk.applicationName=' + applicationName]
 }
  */
 
-def sbkVersion = "7.0"
+def sbkVersion = "8.0"
 
 
 dependencies {

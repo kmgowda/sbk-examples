@@ -10,9 +10,12 @@ repositories {
     mavenCentral()
 }
 
-mainClassName = "io.file.Main"
+application {
+    applicationName = "sbk-file"
+    mainClass = "io.file.Main"
+}
 
-def sbkVersion = "7.0"
+def sbkVersion = "8.0"
 
 dependencies {
     implementation "io.github.kmgowda.sbk:sbk-api:$sbkVersion"
